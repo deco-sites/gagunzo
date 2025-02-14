@@ -1,0 +1,36 @@
+{
+  "name": "My New Page",
+  "path": "/ouvidoria",
+  "sections": [
+    null,
+    {
+      "label": "Categoria",
+      "widget": "select",
+      "required": true,
+      "options": [
+        "Reclamação",
+        "Sugestão",
+        "Elogio",
+        "Denúncia",
+        "Solicitação"
+      ]
+    },
+    {
+      "label": "Localização",
+      "widget": "text",
+      "required": true,
+      "placeholder": "Informe o local onde ocorreu o problema"
+    },
+    {
+      "label": "Documentos",
+      "widget": "file",
+      "multiple": true,
+      "accept": ".pdf,.doc,.docx,.jpg,.png",
+      "placeholder": "Anexe documentos relevantes"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
